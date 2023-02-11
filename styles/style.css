@@ -11,11 +11,10 @@
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
-  padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 30px 80px 80px;
   position: relative;
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .nav {
@@ -64,7 +63,7 @@
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   max-width: 636px;
   top: 135px;
@@ -244,9 +243,7 @@
   display: block;
   padding-top: 100px;
   padding-bottom: 140px;
-  background-image: url(../images/staff_picks_background.jpg);
-  background-position: bottom;
-  background-size: cover;
+  background: url(../images/staff_picks_background.jpg);
 }
 
 .staff__title {
@@ -344,7 +341,6 @@
 }
 
 .step__title {
-  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
@@ -371,7 +367,6 @@
 }
 
 .about__title {
-  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
@@ -383,14 +378,12 @@
 .about__content {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
   max-width: 660px;
   gap: 32px;
   z-index: 1;
 }
 
 .about__paragraph {
-  margin: 0;
   padding-bottom: 32px;
 }
 
@@ -410,12 +403,8 @@
   margin-top: auto;
   font-size: 16px;
   line-height: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 80px;
-  padding-right: 102px;
+  padding: 60px 102px 80px 60px;
   background-color: #1f1f1f;
-  display: contents;
   height: 344px;
   min-height: 224px;
 }
@@ -425,19 +414,17 @@
   flex-direction: row;
   background-color: inherit;
   padding-bottom: 60px;
-  padding-left: 80px;
 }
 
 .footer__column_content_hours {
   margin-left: auto;
   margin-right: 100px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #ffff;
 }
 
 .footer__column_content_social {
-  padding-bottom: 20px;
-  margin-right: 102px;
+  margin-bottom: 20px;
   color: #ffff;
 }
 
@@ -450,7 +437,6 @@
 .footer__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 .footer__list-item {
@@ -468,7 +454,7 @@
   line-height: 20px;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  column-gap: 16px;
 }
 
 .footer__column-link:hover {
@@ -479,14 +465,11 @@
   height: 16px;
   width: 16px;
   margin-right: 10px;
+  align-items: center;
 }
 
 .footer__copyright {
-  position: relative;
-  margin: 0;
   background-color: inherit;
   color: #ffffff;
   width: 200px;
-  top: -60px;
-  left: 80px;
 }
