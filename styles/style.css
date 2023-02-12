@@ -454,7 +454,8 @@
   line-height: 20px;
   text-decoration: none;
   display: flex;
-  column-gap: 16px;
+  column-gap: 10px;
+  align-items: center;
 }
 
 .footer__column-link:hover {
@@ -464,7 +465,6 @@
 .footer__social-icon {
   height: 16px;
   width: 16px;
-  margin-right: 10px;
   align-items: center;
 }
 
